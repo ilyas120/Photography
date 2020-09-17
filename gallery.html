@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Photo Graphy</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="bootstrap/4.5.2/css/style.css">
+	<!-- <link rel="stylesheet" href="bootstrap/4.5.2/css/iconstyle.css"> -->
+	<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"> -->
+	<link rel="stylesheet" href="bootstrap/4.5.2/css/venobox.css">
+	<link rel="stylesheet" href="bootstrap/4.5.2/css/owl.carousel.min.css">
+	<!-- <link rel="stylesheet" href="bootstrap/4.5.2/css/aos.css"> -->
+
+
+<!-- 	<link rel="stylesheet" href="bootstrap/4.5.2/css/remixicon.css"> -->
+
+		<style>
+/** {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+*/
+/* Center website */
+/*.main {
+  max-width: 1000px;
+  margin: auto;
+}*/
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+</style>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<!-- navbar -->
+		    	<div class="col-12">
+		    		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+					  <a class="navbar-brand" href="index.html">PhotoGraphy</a>
+					  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+					    <span class="navbar-toggler-icon"></span>
+					  </button>
+
+						<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+							<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+								<li class="nav-item active">
+							        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+								</li>
+								<li class="nav-item">
+								   <a class="nav-link" href="gallery.html">Gallary</a>
+								</li>
+								<li class="nav-item">
+								   <a class="nav-link" href="news.html">News</a>
+								</li>
+								<li class="nav-item">
+								   <a class="nav-link" href="services.html">Services</a>
+								</li>
+								<li class="nav-item">
+								   <a class="nav-link" href="contactus.html">Contact Us</a>
+								</li>
+						    </ul>
+						    <form class="form-inline my-2 my-lg-0">
+						      <input class="form-control mr-sm-2" type="search" placeholder="Search">
+						      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+						    </form>
+					 	</div>
+					</nav>
+		    	</div>
+
+			</div>
+			<div class="row text-center">
+				<div class="col-12">
+					<h1>Photo Gallery</h1>
+					<hr>
+
+					<h2>PORTFOLIO</h2>
+
+					<div id="myBtnContainer">
+					  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+					  <button class="btn" onclick="filterSelection('birthday')"> Birthday & Weddings</button>
+					  <button class="btn" onclick="filterSelection('indoors')"> Indoors</button>
+					  <button class="btn" onclick="filterSelection('outdoors')"> Outdoors</button>
+					  <button class="btn" onclick="filterSelection('seasport')"> Sea Sports</button>
+					</div>
+				</div>
+			</div>
+
+					<!-- Portfolio Gallery Grid -->
+			<div class="row">
+					<div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 column birthday">
+					    <div class="content">
+					      <img src="img/img7.jpg" alt="Mountains" style="width:100%">
+					      <h4>Bride and Groom</h4>
+					      <p>can be taken any where..</p>
+					    </div>
+					</div>
+					<div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 column birthday">
+					    <div class="content">
+					    <img src="img/img8.jpg" alt="Lights" style="width:100%">
+					      <h4>Backdrop</h4>
+					      <p>Design..</p>
+					    </div>
+					</div>
+					<div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 column birthday">
+					    <div class="content">
+					    <img src="img/img9.jpg" alt="Nature" style="width:100%">
+					      <h4>Performance</h4>
+					      <p>Captures..</p>
+					    </div>
+					</div>
+					  
+					<div class="column col-sm-12 col-md-6 col-lg-6 col-xl-4 indoors">
+					    <div class="content">
+					      <img src="img/img16.jpg" alt="Car" style="width:100%">
+					      <h4>Gayzone</h4>
+					      <p>What should be captured..</p>
+					    </div>
+					</div>
+					<div class="column col-sm-12 col-md-6 col-lg-6 col-xl-4 indoors">
+					    <div class="content">
+					    <img src="img/img17.jpg" alt="Car" style="width:100%">
+					      <h4>Baby</h4>
+					      <p>Cute with smile..</p>
+					    </div>
+					</div>
+					<div class="column col-sm-12 col-md-6 col-lg-6 col-xl-4 indoors">
+					    <div class="content">
+					    <img src="img/img18.jpg" alt="Car" style="width:100%">
+					      <h4>Cupples</h4>
+					      <p>With more attitude..</p>
+					    </div>
+					</div>
+
+					<div class="column col-sm-12 col-md-6 col-lg-6 col-xl-4 outdoors">
+					    <div class="content">
+					      <img src="img/img13.jpg" alt="Car" style="width:100%">
+					      <h4>Nature</h4>
+					      <p>With Spring..</p>
+					    </div>
+					</div>
+					<div class="column col-sm-12 col-md-6 col-lg-6 col-xl-4 outdoors">
+					    <div class="content">
+					    <img src="img/img14.jpg" alt="Car" style="width:100%">
+					      <h4>Effects</h4>
+					      <p>With Nature..</p>
+					    </div>
+					</div>
+					<div class="column col-sm-12 col-md-6 col-lg-6 col-xl-4 outdoors">
+					    <div class="content">
+					    <img src="img/img15.jpg" alt="Car" style="width:100%">
+					      <h4>Familly</h4>
+					      <p>Open with Smile..</p>
+					    </div>
+					</div>
+					<div class="column col-sm-12 col-md-6 col-lg-6 col-xl-4 seasport">
+					    <div class="content">
+					    <img src="img/img19.jpg" alt="Car" style="width:100%">
+					      <h4>Underwater</h4>
+					      <p>Diving..</p>
+					    </div>
+					</div>
+					<div class="column col-sm-12 col-md-6 col-lg-6 col-xl-4 seasport">
+					    <div class="content">
+					    <img src="img/img20.jpg" alt="Car" style="width:100%">
+					      <h4>Swimming</h4>
+					      <p>With Style..</p>
+					    </div>
+					</div>
+					<div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 column seasport">
+					    <div class="content">
+					    <img src="img/img21.jpg" alt="Car" style="width:100%">
+					      <h4>On Beach</h4>
+					      <p>With Smile..</p>
+					    </div>
+					</div>
+					<!-- END GRID -->
+			</div>
+
+					<!-- END MAIN -->
+		</div>
+				
+			
+			
+			<!-- footer -->
+		<div class="row">
+			    <div class="col-12">
+				    <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+				    	<div class="row text-center">
+				    		<div class="col-xl-4">
+				    				
+				    			<ul style="list-style-type: none;">
+				    				<li><h5>Quick links</h5></li>
+				    				<li>Home</li>
+				    				<li>About</li>
+				    				<li>FAQ</li>
+				    				<li>Get Started</li>
+				    				<li>Videos</li>
+				    			</ul>
+				    		</div>
+				    		<div class="col-xl-4">
+				    			<ul style="list-style-type: none;">
+				    				<li><h5>Quick links</h5></li>
+				    				<li>Home</li>
+				    				<li>About</li>
+				    				<li>FAQ</li>
+				    				<li>Get Started</li>
+				    				<li>Videos</li>
+				    			</ul>
+				    		</div>
+
+				    		<div class="col-xl-4">
+				    				
+				    			<ul style="list-style-type: none;">
+				    				<li><h5>Quick links</h5></li>
+				    				<li>Home</li>
+				    				<li>About</li>
+				    				<li>FAQ</li>
+				    				<li>Get Started</li>
+				    				<li>Videos</li>
+				    			</ul>
+				    		</div>
+				    	</div>
+						    <div class="container text-center">
+						    	<small>Copyright &copy; Your Website</small>
+						    </div>
+					</footer>
+			    </div>
+
+		</div>
+
+	</div>
+		<script>
+			filterSelection("all")
+			function filterSelection(c) {
+			  var x, i;
+			  x = document.getElementsByClassName("column");
+			  if (c == "all") c = "";
+			  for (i = 0; i < x.length; i++) {
+			    w3RemoveClass(x[i], "show");
+			    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+			  }
+			}
+
+			function w3AddClass(element, name) {
+			  var i, arr1, arr2;
+			  arr1 = element.className.split(" ");
+			  arr2 = name.split(" ");
+			  for (i = 0; i < arr2.length; i++) {
+			    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+			  }
+			}
+
+			function w3RemoveClass(element, name) {
+			  var i, arr1, arr2;
+			  arr1 = element.className.split(" ");
+			  arr2 = name.split(" ");
+			  for (i = 0; i < arr2.length; i++) {
+			    while (arr1.indexOf(arr2[i]) > -1) {
+			      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+			    }
+			  }
+			  element.className = arr1.join(" ");
+			}
+
+
+			// Add active class to the current button (highlight it)
+			var btnContainer = document.getElementById("myBtnContainer");
+			var btns = btnContainer.getElementsByClassName("btn");
+			for (var i = 0; i < btns.length; i++) {
+			  btns[i].addEventListener("click", function(){
+			    var current = document.getElementsByClassName("active");
+			    current[0].className = current[0].className.replace(" active", "");
+			    this.className += " active";
+			  });
+			}
+		</script>
+	</body>
+</html>
